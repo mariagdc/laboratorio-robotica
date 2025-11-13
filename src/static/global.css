@@ -1,0 +1,70 @@
+:root {
+  --primary-blue: #4361ee;
+  --primary-orange: #f3722c;
+  --primary-green: #4cc9f0;
+  --yellow: #ffd166;
+  --purple: #7209b7;
+  --white: #ffffff;
+  --gray-light: #f8f9fa;
+  --gray-dark: #212529;
+  
+  --font-rounded: 'Nunito', 'Comic Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-rounded);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: var(--gray-dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-rounded);
+}
+
+.btn-primary {
+  background: var(--primary-orange);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e55a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(243, 114, 44, 0.3);
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-green);
+}
